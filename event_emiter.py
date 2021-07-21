@@ -26,8 +26,6 @@ def print_two():
 
 
 event_emitter = EventEmitter()
-event_emitter2 = EventEmitter()
-event_emitter3 = EventEmitter()
 
 event_emitter.on("Come", print_one)
 event_emitter.on("Come", print_two)
