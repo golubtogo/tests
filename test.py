@@ -20,7 +20,7 @@ def test_lambdatest_todo_app():
 """
 This test subscription process on site to-3d.com
 """
-def test_to_3d_com():
+_def test_to_3d_com():
     chrome_driver = webdriver.Chrome()
 
     chrome_driver.get('https://to-3d.com/')
