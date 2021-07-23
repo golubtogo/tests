@@ -1,3 +1,5 @@
+__author__ = "Nataliya"
+
 from geom2d.point import *
 
 a = Point(0, 0)
