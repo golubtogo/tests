@@ -13,11 +13,19 @@ class Counter:
     def dec(self):
         self.value -= 1
 
-
-def test_inc_value():
-    counter = Counter()
-    counter.inc()
-    return counter.value == 1
+    @staticmethod
+    def _static():
+        print("static")
 
 
-print(test_inc_value())
+counter = Counter()
+# counter == self
+counter.inc()
+counter._static()
+print(counter.value)
+
+
+Counter.inc(counter)
+Counter._static()
+
+print(counter.value)
